@@ -25,7 +25,7 @@ void gol_play (int del) {
     gol_nextgen();
     if (gol_count_changes() == 0){
       if (searchlivevoxel() > 0){  
-        delay(1000);  //pausa de 1s caso o ponto fixo tenha led aceso
+        delay(2000);  //pausa de 1s caso o ponto fixo tenha led aceso
         Serial.println("PF ACESO"); //remover
         return;
       }

@@ -65,7 +65,7 @@ void loop()
     vidas++;
     fill(0x00);
     delay(500);
-    effect_random(50, 450);
+    effect_random(random(513), 450);
 
     gol_play(350);//o parametro eh o tempo entre iteracoes
     delay(500);
