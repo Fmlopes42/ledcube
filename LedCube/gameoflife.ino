@@ -25,13 +25,12 @@ void gol_play (int del) {
     gol_nextgen();
     if (gol_count_changes() == 0){
       if (searchlivevoxel() > 0){  
-        delay(2000);  //pausa de 1s caso o ponto fixo tenha led aceso
-        Serial.println("PF ACESO"); //remover
+        delay(10000);  //pausa de 10 s caso o ponto fixo tenha led aceso
         return;
       }
       return;
     }
-    if (i==300) //resetar caso caia no caso periodico
+    if (i==500) //resetar caso caia no caso periodico
       return;
     if (!tmp2cube())
       return;

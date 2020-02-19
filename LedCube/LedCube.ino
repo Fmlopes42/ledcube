@@ -65,9 +65,9 @@ void loop()
     vidas++;
     fill(0x00);
     delay(500);
-    effect_random(random(513), 450);
-
-    gol_play(350);//o parametro eh o tempo entre iteracoes
+    effect_random(random(513), 50);
+    delay(500);
+    gol_play(100);//o parametro eh o tempo entre iteracoes 100
     delay(500);
     effect_planboing(3, 700);
     effect_planboing(2, 700);
